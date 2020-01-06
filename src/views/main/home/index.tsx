@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useStore from '../../../utils/useStore';
+import {useObserver} from 'mobx-react-lite';
+  interface ItemType {
 
-function index () {
-        return (
-            <div>
-                首页
-            </div>
-        );
-}
-
-export default index;
+  }
+  const Home: React.FC = () => {
+    let store = useStore();
+    let {cart} = store;
+  
+    // 模拟didMount
+    useEffect(() => {
+        
+    }, []);
+  
+    return useObserver(()=><>
+      <div></div>
+    </>)
+  }
+  
+  export default Home;

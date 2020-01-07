@@ -1,7 +1,6 @@
-import React from 'react'
-// 导入store
-import Cart from './cart'
+// // 导入store
+import Topic from './module/topic'
 
 export default {
-    cart: new Cart()
+    Topic: new Topic()
 }

@@ -1,7 +1,5 @@
 import React from 'react'
-// 导入store
-import Cart from './cart'
-
+import Fl from './Fl'
 export default {
-    cart: new Cart()
+    Fl: new Fl()
 }

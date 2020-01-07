@@ -1,5 +1,5 @@
 import React from 'react'
-import Cart from './cart'
+import Fl from './Fl'
 export default {
-    cart: new Cart()
+    Fl: new Fl()
 }

@@ -9,7 +9,10 @@ export default (props:ItemType)=>{
     return <footer>
               {
                    props.routes.map((item:any,index)=>{
-                   return <Router.NavLink key={index} to={item.path}>{item.text}</Router.NavLink>
+                   return <Router.NavLink key={index} to={item.path}>
+                   {/* <i>{item.icon}</i> */}
+                    <p>{item.text}</p> 
+                       </Router.NavLink>
                    })
               }
             </footer>

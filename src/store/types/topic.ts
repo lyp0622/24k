@@ -5,12 +5,13 @@ export interface specialType{
     scene_pic_url:string,
     title:string,
     subtitle:string,
-    price_info:number
+    price_info:number,
+    id:number
 }
 
 //专题详情页需要的数据
 export interface topicDetail{
-    id: number,
+    id: string,
     title:string,
     content:string,
     avatar:string,
@@ -24,4 +25,16 @@ export interface topicDetail{
     topic_tag_id:number,
     sort_order:number,
     is_show:number
+}
+
+//精品留言
+export interface commentListType{
+    totalPages: number,
+    pageSize: number,
+    currentPage: number,
+    content: string,
+    add_time: string,
+    value_id: number,
+    username: string
+    user_info: any
 }

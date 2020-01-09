@@ -6,8 +6,8 @@ export let getCategory=()=>{
 }
 
 //获取当前分类信息和子分类
-export let fn=(id:number)=>{
-    return request.get(`/catalog/current?id=${id}`)
+export let fn=(parame:any)=>{
+    return request.get('/catalog/current',{id: Number})
 }
 
 //获取分类ID分类Nav数据

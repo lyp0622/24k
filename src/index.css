@@ -21,7 +21,7 @@ a{
   flex-direction: column;
 }
 .wrap div{
-  /* flex: 1; */
+  flex: 1;
   overflow: auto;
 }
 

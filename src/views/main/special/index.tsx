@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import useStore from "../../../utils/useStore"
 import { useObserver } from "mobx-react-lite"
 // import style from './index.module.scss' //需要在 className={style.类名}
-import './index.module.scss'
+import './index.css'
 import {History} from 'history' //跳转路由必写项
 
 interface PropeType { //跳转路由必定义的类型
@@ -20,7 +20,7 @@ let Special: React.FC<PropeType> = (props) => {
     
     let tiao=(id:number)=>{
         console.log(id,'eeeeeeeeeeeee')
-        props.history.push(`/specialDetail/id=${id}`)
+        props.history.push(`/specialDetail/${id}`)
     }
 
     return useObserver(() => (

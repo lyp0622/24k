@@ -12,5 +12,10 @@ export let getTypeDetail = (params: any)=>{
 
 //精品留言
 export let commentList = (params: any)=>{
-    return  request.get('/comment/list',{valueId:params.valueId,typeId:params.typeId,page:params.currentPage,size:params.pageSize})
+    return  request.get('/comment/list',{valueId:params.valueId,typeId:params.typeId,page:params.page,size:params.size})
+}
+
+//根据专题Id获取专题详情 /topic/detail
+export let topicDetail = (params: any) =>{
+    return request.get('/topic/detail')
 }

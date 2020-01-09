@@ -11,7 +11,7 @@ export interface specialType{
 
 //专题详情页需要的数据
 export interface topicDetail{
-    id: string,
+    id: number,
     title:string,
     content:string,
     avatar:string,

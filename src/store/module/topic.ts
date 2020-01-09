@@ -27,17 +27,12 @@ export default class CreateStore{
 
     @observable
     dlist:commentListType[]=[]
-    @observable
-    name:commentListType[]=[]
     //精品留言
     @action
     async commentList(obj:object){
         const res:any =await commentList(obj);
-        console.log(res.data[0].user_info.username,'dlist123')
-        console.log(res.data,'============')
+        console.log(res.data,'============') //查找user_info存在的个数，当user_info为 undefined 时，让undefined="匿名用户"
         this.dlist = res.data;
-        this.name=res.data[0].user_info.username
-        // res.data[0].user_info?this.name=res.data[0].user_info.username : this.name='匿名用户'
         console.log(this.dlist,'dlist')
     }
 

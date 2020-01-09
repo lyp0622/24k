@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useStore from '../../../utils/useStore';
+import {useObserver} from 'mobx-react-lite';
 
 function index () {
         return (
             <div>
-                首页
+                购物车
             </div>
         );
 }

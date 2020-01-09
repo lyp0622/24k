@@ -7,10 +7,14 @@ import Classify from '../views/main/classify/index'
 import Cart from '../views/main/cart/index'
 import My from '../views/main/my/index'
 import Footer from '../component/footer/index'
+import DetailClass from '../views/classDetail/index'
 export default {
     routes:[{
         path:'/login',
         component:Login
+    },{
+        path:'/classDetail/:id',
+        component:DetailClass
     },{
         path:'/main',
         component:(props:any)=>(<>

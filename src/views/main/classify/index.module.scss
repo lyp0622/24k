@@ -1,14 +1,16 @@
-:global{
-    .wrap{
+:global {
+    .wrap {
         width: 100%;
         height: 100%;
         /* display: flex; */
     }
-    .top{
+
+    .top {
         width: 100%;
         height: 40px;
     }
-    .top input{
+
+    .top input {
         height: 35px;
         width: 86%;
         background: #eee;
@@ -17,21 +19,25 @@
         border-radius: 5px;
         text-align: center;
     }
-    .box{
+
+    .box {
         width: 100%;
         height: 100%;
         display: flex;
     }
-    .left{
+
+    .left {
         flex: 2.5;
         height: 100%;
         border-right: solid 1px #ccc;
     }
-    .left div{
+
+    .left div {
         line-height: 60px;
         text-align: center;
     }
-    .right{
+
+    .right {
         flex: 7.5;
         overflow: auto;
     }

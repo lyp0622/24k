@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.userMsg {
+    height: 170px;
+    width: 100%;
+    background-color: #cdb480;
+    background-size: 100%;
+    padding: .7rem .4rem;
+    display: flex;
+}
+
+.userMsgWrap{
+    width: 300px;
+    height: 100px;
+    margin: 30px;  
+}
+.userLogo{
+    float: left;
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.userMsgs>div{
+    margin-top: 15px;;
+    display: flex;
+    align-items: center;
+    color: white; 
+}
+.userPower{
+    width: 100%;
+    height: auto;
+}
+.userPower > div i {
+    display: block;
+    padding-top: .8rem;
+    padding-bottom: .2rem;
+    text-align: center;
+    font-size: .6rem;
+    color: #9e9e9e;
+}
+

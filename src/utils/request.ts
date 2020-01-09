@@ -10,6 +10,7 @@ const instance = axios.create({
 // 请求拦截器
 instance.interceptors.request.use( (config) =>{
   // Do something before request is sent
+  config.headers["x-nideshop-token"]="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNiwiaWF0IjoxNTYzOTUxMjg1fQ.qbMBV1MycS7iq8u0uhtmmH7RjOCwjeLrBSvtNaxGMRk"
   return config;
 }, (error)=> {
   // Do something with request error

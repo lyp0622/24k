@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* 
+  购物车排版
+*/
+.cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+
+.cartHead {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  background: #ccc;
+}
+
+.cartHead p {
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+  line-height: 43px;
+}
+
+.cartHead p span {
+  color: red;
+  padding-right: 5px;
+}
+
+.cartMain {
+  width: 100%;
+  height: auto;
+}
+
+.ListItem {
+  width: 100%;
+  height: 122px;
+  background: #fff;
+  display: flex;
+  padding: 10px 10px 10px 0;
+}
+
+.isCheckItem {
+  width: 44px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isCheckItem img {
+  width: 20px;
+  height: 20px;
+}
+
+.Item {
+  width: 99px;
+  height: 100%;
+  background: #ccc;
+}
+
+.Item img {
+  width: 100%;
+  height: 100%;
+}
+
+.commodity {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+
+.ItemMsg {
+  width: 241px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+
+.ItemMsg div {
+  flex: 1;
+}
+
+.ItemMsg div:first-child {
+  font-size: 18px;
+}
+
+.ItemMsg div:last-child {
+  color: red;
+}
+
+.ItemNum {
+  font-size: 16px;
+}
+
+.selected {
+  width: 255px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.selects {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.countOp {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color {
+  color: red;
+  padding-left: 10px;
+}
+
+.num {
+  margin: auto 0;
+  display: flex;
+}
+
+.num div {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 33px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.num div:nth-child(2) {
+  width: 50px;
+  border-left: none;
+  border-right: none;
+}
+
+.cartFooter {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  height: 61px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 45px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 20px;
+  height: 20px;
+}
+
+.select {
+  width: 138px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.select p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.editor {
+  width: 88px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.place {
+  flex: 1;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  background: #ab2b2b;
+  color: #fff;
+}
+
+.trade {
+  width: 100%;
+  height: 61px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.delete {
+  width: 100%;
+  height: 61px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}

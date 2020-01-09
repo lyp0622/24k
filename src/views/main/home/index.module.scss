@@ -89,6 +89,41 @@
      .font_color_price{
          color: #f00
      }
+    .hotGoodlist_box{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        h3{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .line_height{
+            height: 1px;
+            width: 90%;
+            margin: 0 auto;
+            background: darkgrey;
+        }
+        .hotGoodlist_box_img{
+            width: 100%;
+            display: flex;
+            .hotGoodlist_box_img_box{
+                flex: 4;
+                text-align: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+            .hotGoodlist_box_img_dscp{
+                flex: 6
+            }
+        }
+
+    }
+
+
+
 }
 
 

@@ -7,6 +7,9 @@ export function HomeList(){
 export function liveHome(params:any){
     console.log(params,"我的参数")
     let id=params
-return request.get('/brand/detail',params)
+return request.get('/goods/list',params)
     // id:example
+}
+export function getCategory(params:any){
+       return request.get("/goods/category",params)
 }

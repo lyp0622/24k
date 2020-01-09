@@ -5,14 +5,25 @@ import { useObserver } from "mobx-react-lite"
 import { Carousel } from 'antd';
 import 'antd/dist/antd.css'
 import "./index.module.scss"
+import { History } from 'history'
 
-const App: React.FC = () => {
+interface topicType {
+    history: History,
+    location:Location
+}
+
+
+const App: React.FC<topicType> = (props) => {
     let store = useStore()
     let { HomeList } = store
     // 模拟didMount
     useEffect(() => {
         HomeList.HomeList()
     }, []);
+    let menuClick = (id: number) => {
+        props.history.push(`/main/funnyHome?${id}`)
+        HomeList.liveHome(id)
+    }
     return useObserver(() => <>
         <div className="homewrap">
             <main>
@@ -28,7 +39,7 @@ const App: React.FC = () => {
                 <div className="icon_header">
                     {
                         HomeList.channelList.map((item, index) => {
-                            return <div className="icon_cont_box" onClick={()=>HomeList.liveHome(item.id)} key={index}>
+                            return <div className="icon_cont_box" onClick={() => menuClick(item.id)} key={index}>
                                 <img src={item.icon_url} alt="" />
                                 <div>{item.name}</div>
                             </div>
@@ -67,9 +78,24 @@ const App: React.FC = () => {
                 </div>
                 <div className="hotGoodlist_box">
                     <h3>人气推荐</h3>
+                    <span className="line_height"></span>
                     {
-
+                        HomeList.hotGoodsList.map((item, index) => {
+                            return <div className="hotGoodlist_box_img" key={index}>
+                                <div className="hotGoodlist_box_img_box"> <img src={item.list_pic_url} alt="" />   </div>
+                                <div className="hotGoodlist_box_img_dscp">
+                                    <h4>{item.name}</h4>
+                                    <p>{item.goods_brief}</p>
+                                    <p>{item.retail_price}</p>
+                                </div>
+                            </div>
+                        })
                     }
+                </div>
+
+                <div className="topicList">
+                <h3>专题精选</h3>
+
                 </div>
 
             </main>

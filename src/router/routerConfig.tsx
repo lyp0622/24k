@@ -2,9 +2,7 @@ import React from 'react'
 import RouterView from './RouterView'
 import Login from '../views/login/index'
 import Home from '../views/main/home/index'
-import Special from '../views/main/special'
-import SpecialDetail from '../views/main/special/detail'
-import Many from '../views/main/special/many'
+import Special from '../views/main/special/index'
 import Classify from '../views/main/classify/index'
 import Cart from '../views/main/cart/index'
 import My from '../views/main/my/index'
@@ -12,12 +10,6 @@ import Footer from '../component/footer/index'
 import DetailClass from '../views/classDetail/index'
 export default {
     routes:[{
-        path: '/specialDetail/:id',
-        component: SpecialDetail
-    },{
-        path: '/many/:id',
-        component: Many
-    },{
         path:'/login',
         component:Login
     },{

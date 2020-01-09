@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,body,#root,.wrap{
+  width: 100%;
+  height: 100%;
+}
+.element::-webkit-scrollbar {
+  display: none;
+}
+html{
+  font-size: calc(100vw/750*100);
+}
+body{
+  font-size: .32rem;
+}
+a{
+  color: #000;
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrap div{
+  flex: 1;
+  overflow: auto;
+}
+
+footer{
+  width: 100%;
+  height: 1rem;
+  background: #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active{
+  color: red;
+}
+
+.homewrap{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column
+}
+.homewrap header{
+     
+}
+.homewrap main{
+  flex: 1;
+  overflow: auto;
+  width: 100%;
+}
+.home_Firstbox{
+  display: flex;
+  
+}
+.logo_box{
+  width: 1.84rem;
+  height: .53333rem;
+  background-image: url(https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png?imageView&type=webp);
+  background-position-x:50%;
+  background-position-y:50%;
+  background-size:cover;
+}
+.logo_box a{
+  
+}

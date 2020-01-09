@@ -1,0 +1,94 @@
+:global{
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box
+    }
+
+    .homewrap_banner{
+        width: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .ant-carousel .slick-slide {
+        text-align: center;
+        height: 3rem;
+        line-height: 3rem;
+        overflow: hidden;
+      }
+      .ant-carousel .slick-slide h3 {
+        color: #fff;
+      }
+
+    .icon_header{
+        width: 100%;
+        display: flex;
+        font-size: 0.3rem;
+        .icon_cont_box{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            img{
+                width: 50%;
+                margin-top: 0.4rem
+            }
+        }
+    }
+    .interval{
+        height: 0.2rem;
+        background: #F4F4F8
+    }
+     .brandList_box{
+         display: flex;
+         flex-direction: column;
+         text-align:center;
+         align-items: center;
+         font-size: 0.3rem
+     }
+
+     .brandList_img_box{
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         .bandList_img{
+             width: 50%; 
+             position: relative;
+             .brandList_detail{
+                 position: absolute;
+             }
+             img{
+                 width: 100%
+             }
+            }
+     }
+
+     .newList_box{
+         width: 100%;
+         background: #fff;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+         .newList_box_cont{
+            display: flex;
+            flex-wrap: wrap;
+            .newList_box_img{
+                width: 50%;
+                img{
+                    width: 100%
+                }
+            }
+         }
+     }
+     .font_color_price{
+         color: #f00
+     }
+}
+
+

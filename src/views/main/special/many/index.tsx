@@ -14,6 +14,7 @@ let Many: React.FC<PropeType> = (props: any) => {
     let store = useStore();
     let { Topic } = store;
     useEffect(() => {
+        console.log(props.match.params.id,'many==============')
         let valueId = props.match.params.id
         Topic.commentList({ valueId: valueId, typeId: 1 })
         console.log(valueId, '4444444444444')

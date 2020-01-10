@@ -38,3 +38,10 @@ export interface commentListType{
     username: string
     user_info: any
 }
+
+//根据专题
+export interface topicDetaiList{
+    title: string,
+    scene_pic_url: string,
+    id: number
+}

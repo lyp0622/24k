@@ -23,8 +23,10 @@
         .funnyWeb_header_second{
                margin-top: 0.01rem;
                background: #f00;
-               height: auto
-
+               height: auto;
+               .funnyWeb_header_second_son{
+                   display: flex;
+               }
         }
 
         

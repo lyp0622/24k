@@ -29,7 +29,14 @@ interface backHome {
                        <h3>奇趣分类</h3>
                  </div>
                  <div className="funnyWeb_header_second">
-                      banner图
+                     <div className="funnyWeb_header_second_son">
+                     {
+                          home.data.categoryList.map((item,index)=>{
+                              return <div key={index}>{item.name}</div>
+                          })
+                      }
+                     </div>
+                     
                  </div>
                
                </div>

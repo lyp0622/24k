@@ -16,10 +16,10 @@ let Special: React.FC<PropeType> = (props) => {
     let { Topic } = store
     useEffect(() => {
         Topic.getSpecialData({ page:4, size:5 })
+        
     }, [Topic])
     
     let tiao=(id:number)=>{
-        console.log(id,'eeeeeeeeeeeee')
         props.history.push(`/specialDetail/${id}`)
     }
 

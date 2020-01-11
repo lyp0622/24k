@@ -1,19 +1,18 @@
 import request from '../utils/request';
 
-
 //专题页面的初始渲染
 export let getSpecialData = (params: any)=>{
     return  request.get('/topic/list',params)
 }
 
 //专题页面的详情
-export let getTypeDetail = (params: any)=>{
-    return  request.get('/topic/detail',params)
+export let getTypeDetail = (id: number)=>{
+    return  request.get(`/topic/detail?id=${id}`)
 }
 
 //精品留言
 export let commentList = (params: any)=>{
-    return  request.get('/comment/list',params)
+    return  request.get('/comment/list',{params})
 }
 
 //根据专题

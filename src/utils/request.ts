@@ -22,7 +22,7 @@ instance.interceptors.request.use( (config) =>{
 instance.interceptors.response.use( (response: AxiosResponse<XHRType>):any =>{
   // Do something with response data
   if(response.status==200&&response.data.errno == 0){
-    return response.data.data;
+    return response.data;
   }
 },  (error) =>{
   // Do something with response error

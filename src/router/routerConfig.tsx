@@ -1,14 +1,7 @@
 import React from 'react'
 import RouterView from './RouterView'
 import Login from '../views/login/index'
-<<<<<<< HEAD
-<<<<<<< HEAD
-// import Main from '../views/main/index'
-=======
->>>>>>> lyp
-=======
-// import Main from '../views/main/index'
->>>>>>> szw
+
 import Home from '../views/main/home/index'
 import Special from '../views/main/special'
 import SpecialDetail from '../views/main/special/detail'
@@ -17,17 +10,9 @@ import Liuyan from '../views/main/special/liuyan'
 import Classify from '../views/main/classify/index'
 import Cart from '../views/main/cart/index'
 import My from '../views/main/my/index'
-<<<<<<< HEAD
-<<<<<<< HEAD
 import Footer from '.././component/footer/index'
 import FunnyHome from "../views/main/home/funnyClass"
-=======
-import Footer from '../component/footer/index'
 import DetailClass from '../views/classDetail/index'
->>>>>>> lyp
-=======
-import Footer from '.././component/footer/index'
->>>>>>> szw
 export default {
     routes:[{
         path: '/specialDetail/:id',
@@ -42,8 +27,7 @@ export default {
         path:'/login',
         component:Login
     },{
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         path:'/main',
         component:(props:any)=>(<>
         <div className='wrap'>
@@ -80,38 +64,12 @@ export default {
     }]
     },{
         path:"/funnyHome",
-        component:FunnyHome
-=======
+        component:FunnyHome},
+        {
         path:'/classDetail/:id',
         component:DetailClass
-    },{
-=======
->>>>>>> szw
-        path:'/main',
-        component:(props:any)=>(<>
-        <div className='wrap'>
-        <RouterView routes={props.routes}></RouterView>
-            <Footer></Footer>
-        </div>
-        </>),
-        children:[{
-            path:'/main/home',
-            component:Home
-        },{
-            path:'/main/special',
-            component:Special
-        },{
-            path:'/main/classify',
-            component:Classify
-        },{
-            path:'/main/cart',
-            component:Cart
-        },{
-            path:'/main/my',
-            component:My
-        }]
->>>>>>> lyp
-    },{
+    },
+    {
         from:'*',
         to:'/main/home'
     }]

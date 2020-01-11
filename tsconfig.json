@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "experimentalDecorators": true,
-=======
-      "experimentalDecorators": true,
->>>>>>> lyp
     "target": "es5",
     "lib": [
       "dom",

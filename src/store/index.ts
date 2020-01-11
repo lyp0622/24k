@@ -1,24 +1,12 @@
-<<<<<<< HEAD
 import React from 'react'
-<<<<<<< HEAD
+import Fl from './Fl'
+import Topic from './module/topic'
+import Ft from './Ft'
 // 导入store
 import Home from './Home'
-
 export default {
-    home: new Home()
-=======
-import Fl from './Fl'
-import Ft from './Ft'
-export default {
+    home: new Home(),
     Fl: new Fl(),
-    Ft: new Ft()
->>>>>>> lyp
-}
-=======
-// // 导入store
-import Topic from './module/topic'
-
-export default {
+    Ft: new Ft(),
     Topic: new Topic()
 }
->>>>>>> szw

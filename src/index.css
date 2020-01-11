@@ -1,28 +1,14 @@
 *{
   margin: 0;
   padding: 0;
-  margin: 0;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
-  text-align: left;
 }
 html,body,#root,.wrap{
   width: 100%;
   height: 100%;
 }
-<<<<<<< HEAD
-.element::-webkit-scrollbar {
-  display: none;
-}
-html{
-  font-size: calc(100vw/750*100);
-}
-body{
-  font-size: .32rem;
-}
-=======
->>>>>>> lyp
 a{
   color: #000;
 }
@@ -33,42 +19,15 @@ a{
   flex-direction: column;
 }
 .wrap div{
-<<<<<<< HEAD
-<<<<<<< HEAD
-  flex: 1;
-  overflow: auto;
-}
-
-.active{
-  color: red;
-}
-.footer_box{
-  width: 100%;
-  height: 50px;
-  background: #ccc;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-=======
   /* flex: 1; */
-=======
-  flex: 1;
->>>>>>> szw
   overflow: auto;
 }
-
-footer{
+.mineFooter{
   width: 100%;
   height: 50px;
-  background: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
+  background: #fff;
+  display: flex;  
 }
-
 .active{
   color: red;
 }
->>>>>>> lyp

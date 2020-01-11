@@ -21,7 +21,6 @@ const ClassFiy: React.FC = () => {
                             return <div key={index} className={Fl.curIndex === index ? 'active' : ''} onClick={() => { }}>
                                 {item.name}
                             </div>
-
                         })
                     }
                 </div>

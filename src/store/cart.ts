@@ -120,3 +120,6 @@ export default class CarStore {
         this.cartTotal = res.data.cartTotal;
     }
 }
+
+
+

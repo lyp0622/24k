@@ -1,8 +1,7 @@
 import React from 'react'
 // 导入store
-import Cart from './cart'
-import HomeList from "./Home"
+import Home from './home'
+
 export default {
-    cart: new Cart(),
-    HomeList:new HomeList()
+    home: new Home()
 }

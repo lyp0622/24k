@@ -1,4 +1,4 @@
-import request from "../utils/request"
+import request from "../util/request"
 import { number } from "prop-types";
 export function HomeList(){
     return request.get("/")

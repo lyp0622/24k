@@ -21,35 +21,34 @@ export default {
             <Footer routes={props.routes}></Footer>
         </div>
         </>),
-        children:[{
-            path:'/main/home',
-            text:'首页',
-            icon:'iconfont icon-caidaniconshouyehui',
-            component:Home
-        }
-        ,{
-            path:'/main/special',
-            text:'专题',
-            iconfont:'iconfont icon-caidaniconshouyehui',
-            component:Special
-        },{
-            path:'/main/classify',
-            text:"分类",
-            icon:'iconfont icon-sort',
-            component:Classify
-        },{
-            path:'/main/cart',
-            text:'购物车',
-            icon:'iconfont icon-cart',
-            component:Cart
-        },{
-            path:'/main/my',
-            text:'我的',
-            icon:'iconfont icon-mine',
-            component:My
-        }]
-    },
-    {
+       children:[{
+        path:'/main/home',
+        text:'首页',
+        icon:'iconfont icon-caidaniconshouyehui',
+        component:Home
+    }
+    ,{
+        path:'/main/special',
+        text:'专题',
+        iconfont:'iconfont icon-caidaniconshouyehui',
+        component:Special
+    },{
+        path:'/main/classify',
+        text:"分类",
+        icon:'iconfont icon-sort',
+        component:Classify
+    },{
+        path:'/main/cart',
+        text:'购物车',
+        icon:'iconfont icon-cart',
+        component:Cart
+    },{
+        path:'/main/my',
+        text:'我的',
+        icon:'iconfont icon-mine',
+        component:My
+    }]
+    },{
         path:"/funnyHome",
         component:FunnyHome
     },{

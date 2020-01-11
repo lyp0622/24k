@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect,useState} from 'react';
 import useStore from '../../../utils/useStore'
 import { useObserver } from 'mobx-react-lite'
 import './index.module.scss'
@@ -12,13 +12,15 @@ interface PropeType { //跳转路由必定义的类型
   }
 const ClassFiy: React.FC<PropeType> = (props) => {
     let store = useStore();
-    let { Fl } = store;
+    let { Ft,Fl } = store;
     useEffect(() => {
         Fl.getCategory()
     }, []);
 
-    let fnn=(id: number)=>{
+    let fnn=(id: number,index:number)=>{
          props.history.push(`/classDetail/${id}`)
+         Ft.setIndex(index)
+         
     }
     return useObserver(() => (
         <div className='wrap'>
@@ -53,7 +55,7 @@ const ClassFiy: React.FC<PropeType> = (props) => {
                         {
                             Fl.ListItem.map((item,index)=>{
                                 return(
-                                    <div className="content" key={index} onClick={()=>fnn(item.id)}>
+                                    <div className="content" key={index} onClick={()=>fnn(item.id,index)}>
                                         <img src={item.wap_banner_url} alt=""/>
                                         <span>{item.name}</span> 
                                     </div>     

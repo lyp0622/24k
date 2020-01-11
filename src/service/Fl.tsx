@@ -15,3 +15,7 @@ export let goods=(id:number)=>{
     return request.get(`/goods/category?id=${id}`)
 }
 
+//获取分类ID分类Nav数据
+export let tab=(categoryId:number)=>{
+    return request.get(`/goods/list?categoryId=${categoryId}`)
+}

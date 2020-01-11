@@ -1,7 +1,5 @@
-export interface ItemType{
-    id:number,
-    checked:boolean,
-    name:string,
-    num:number,
-    price:number
+export interface XHRType {
+    errno: number,
+    errmsg: string,
+    data?: object
 }

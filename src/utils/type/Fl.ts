@@ -49,3 +49,10 @@ export interface goodsType{
     type:  number
     wap_banner_url: string
 }
+
+export interface detail{
+    id: number
+    list_pic_url: string
+    name: string
+    retail_price: number
+}

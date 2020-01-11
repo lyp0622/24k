@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 <<<<<<< HEAD
 // 导入store
@@ -13,3 +14,11 @@ export default {
     Ft: new Ft()
 >>>>>>> lyp
 }
+=======
+// // 导入store
+import Topic from './module/topic'
+
+export default {
+    Topic: new Topic()
+}
+>>>>>>> szw

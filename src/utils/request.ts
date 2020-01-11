@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from "axios"
 import {AxiosResponse} from "axios"
 import {XHRType} from "./type"
@@ -5,6 +6,26 @@ const instance = axios.create({
     baseURL: '//169.254.0.62:8888',
     timeout: 1000,
     headers: {'x-nideshop-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNiwiaWF0IjoxNTc4NDY3MzkyfQ.lgny3Bm0_Bh1WD71y7efEZeHUrBcntdQ5M_z8a2FQss'}
+=======
+import axios from 'axios'
+import {XHRType} from './type'
+import {AxiosResponse} from 'axios/index';
+// create an axios instance
+const instance = axios.create({
+//   baseURL: /h5.chelun.com/.test(window.location.origin)? 'https://baojia.chelun.com/':'http://baojia-test.chelun.com/',
+  baseURL:"http://169.254.0.62:8888" ,  
+  // withCredentials: true, // 跨域请求时发送 cookies
+  timeout: 5000 // request timeout
+})
+// 请求拦截器{}
+instance.interceptors.request.use( (config) =>{
+  // Do something before request is sent
+  config.headers["x-nideshop-token"]="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNiwiaWF0IjoxNTYzOTUxMjg1fQ.qbMBV1MycS7iq8u0uhtmmH7RjOCwjeLrBSvtNaxGMRk"
+  return config;
+}, (error)=> {
+  // Do something with request error
+  return Promise.reject(error);
+>>>>>>> szw
 });
 
 // 请求拦截器
@@ -17,6 +38,7 @@ instance.interceptors.request.use(function (config) {
   }
 );
 // 响应拦截器
+<<<<<<< HEAD
 instance.interceptors.response.use(function (response:AxiosResponse<XHRType>):any {
     // Do something with response data
     // return response;
@@ -31,6 +53,12 @@ instance.interceptors.response.use(function (response:AxiosResponse<XHRType>):an
     return Promise.resolve(null);
     // Do something with response error
     // return Promise.reject(error);
+=======
+instance.interceptors.response.use( (response: AxiosResponse<XHRType>):any =>{
+  // Do something with response data
+  if(response.status==200&&response.data.errno == 0){
+    return response.data.data;
+>>>>>>> szw
   }
 );
 

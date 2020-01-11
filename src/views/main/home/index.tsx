@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useEffect } from 'react'
 import useStore from '../../../util/useStore'
 import { useObserver } from 'mobx-react-lite'
@@ -158,11 +159,14 @@ export default App
 import React, { useEffect } from 'react';
 import useStore from '../../../utils/useStore';
 import {useObserver} from 'mobx-react-lite';
+=======
+import React from 'react';
+>>>>>>> szw
 
 function index () {
         return (
             <div>
-                购物车
+                首页
             </div>
         );
 }

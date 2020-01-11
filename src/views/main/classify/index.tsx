@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 
 function index () {
@@ -76,9 +77,21 @@ const ClassFiy: React.FC<PropeType> = (props) => {
                             })
                         }
                 </div>
+=======
+import React from 'react';
+
+function index () {
+        return (
+            <div>
+                分类
+>>>>>>> szw
             </div>
-        </div>
-    ))
+        );
 }
+<<<<<<< HEAD
 export default ClassFiy;
 >>>>>>> lyp
+=======
+
+export default index;
+>>>>>>> szw

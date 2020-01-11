@@ -19,10 +19,16 @@ let Detail: React.FC<PropeType> = (props: any) => {
         let detaiL = props.match.params.id
         Topic.getTypeDetail({ id: detaiL })
         Topic.commentList({ valueId: detaiL, typeId: 1, page: 1, size: 5 })
+        Topic.topicDetails({ id: detaiL })
     }, [Topic])
 
     let many = (id: number) => {
         props.history.push(`/many/${id}/typeId=1`)
+    }
+
+    let writes = (id: number) => {
+        console.log(id,'iiiiiiiiiiiiiiiiiiiidddddddddddd')
+        props.history.push(`/liuyan/${id}`)
     }
 
     return useObserver(() => (
@@ -39,11 +45,11 @@ let Detail: React.FC<PropeType> = (props: any) => {
                         <div className="message">
                             <div className="messageTitle">
                                 <p>精品留言</p>
-                                <p>编辑</p>
+                                <p onClick={()=>writes(item.id)}>编辑</p>
                             </div>
                             <div className="message-box">
                                 {
-                                    Topic.dlist.length == 0 ? <div>等你来评论！</div> : Topic.dlist.map((ite, ind) => {
+                                    Topic.dlist.length == 0 ? <div className="message-talk">等你来评论！</div> : Topic.dlist.map((ite, ind) => {
                                         return <div className="messagename" key={ind}>
                                             <p className="p1">
                                                 <span className="span1">
@@ -64,15 +70,22 @@ let Detail: React.FC<PropeType> = (props: any) => {
                                 }
                             </div>
                         </div>
-                        <div className="recommend">
-                            <p className="recommend-p">推荐专题</p>
-                            <div className="recommend-image">
-
-                            </div>
-                        </div>
                     </div>
                 })
             }
+            <div className="recommend">
+                <p className="recommend-p">推荐专题</p>
+                <div className="recommend-image">
+                    {
+                        Topic.zhuanTi.map((items,indexs) => {
+                            return <div key={indexs} className="small-box">
+                                <img src={items.scene_pic_url} alt="" className="small-img"/>
+                                <p className="small-p">{items.title}</p>
+                            </div>
+                        })
+                    }
+                </div>
+            </div>
         </div>
     ))
 }

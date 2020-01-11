@@ -1,14 +1,17 @@
 *{
   margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
+  text-align: left;
 }
 html,body,#root,.wrap{
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
 .element::-webkit-scrollbar {
   display: none;
 }
@@ -18,6 +21,8 @@ html{
 body{
   font-size: .32rem;
 }
+=======
+>>>>>>> lyp
 a{
   color: #000;
 }
@@ -28,6 +33,8 @@ a{
   flex-direction: column;
 }
 .wrap div{
+<<<<<<< HEAD
+<<<<<<< HEAD
   flex: 1;
   overflow: auto;
 }
@@ -43,3 +50,25 @@ a{
   justify-content: space-around;
   align-items: center;
 }
+=======
+  /* flex: 1; */
+=======
+  flex: 1;
+>>>>>>> szw
+  overflow: auto;
+}
+
+footer{
+  width: 100%;
+  height: 50px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.active{
+  color: red;
+}
+>>>>>>> lyp

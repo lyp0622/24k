@@ -1,0 +1,107 @@
+.specaidetail{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    line-height: 50px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header .p-a{
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.header-span{
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+    margin-right: 30px;
+}
+.detail{
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    margin-top: 30px;
+    padding: 0;
+}
+.detail img{
+    width: 100%;
+    display: block;
+}
+.message{
+    margin: 0 10px;
+}
+.messageTitle{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+    line-height: 50px;
+}
+.messagename{
+    border-bottom: 1px solid #eeeeee;
+}
+.messagename .p1{
+    width: 100%;
+    line-height: 40px;
+    display: flex;
+}
+.messagename .span1{
+    display: block;
+    font-size: 14px;
+    width: 60%;
+}
+.messagename .span2{
+    display: block;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+.messagename .p2{
+    line-height: 30px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+.message-talk{
+    line-height: 50px;
+    text-align: center;
+}
+.message .look{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.recommend{
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+    margin-top: 10px;
+}
+.recommend-p{
+    line-height: 40px;
+    text-align: center;
+}
+.recommend-image{
+    margin: 0 5px;
+    background: #ffffff;
+}
+.small-box{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 10px solid #eeeeee;
+}
+.small-img{
+    width: 100%;
+}
+.small-p{
+    line-height: 30px;
+    color: #aaaaaa;
+}

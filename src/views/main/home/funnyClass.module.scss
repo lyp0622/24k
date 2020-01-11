@@ -1,0 +1,36 @@
+:global{
+    .funnyWeb_box{
+        display: flex;
+        flex-direction: column;
+        background: #ccc;
+        
+    }
+    .funnyWeb_header{
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        .funnyWeb_header_first{
+            background: #f90;
+           display: flex;
+           height: 1rem;
+           span{
+               flex: 1
+           }
+           h3{
+               flex: 9
+           }
+        }
+        .funnyWeb_header_second{
+               margin-top: 0.01rem;
+               background: #f00;
+               height: auto
+
+        }
+
+        
+    }
+    .funnyWeb_main{
+        width:100%;
+       overflow: auto
+    }
+}

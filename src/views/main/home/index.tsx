@@ -21,7 +21,7 @@ const App: React.FC<topicType> = (props) => {
         HomeList.HomeList()
     }, []);
     let menuClick = (id: number) => {
-        props.history.push(`/main/funnyHome?${id}`)
+        props.history.push(`/funnyHome?${id}`)
         HomeList.liveHome(id)
     }
     return useObserver(() => <>

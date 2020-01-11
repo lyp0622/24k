@@ -1,7 +1,6 @@
 import {observable, action, computed} from 'mobx'
 import {HomeList,liveHome,getCategory} from "../api/Homelist"
 import {ItemType,channel,newList,brandList,hotGoodsList,topicList} from "../utils/homeList"
-import { async } from 'q';
 
 class HomeStore{
     @observable 
@@ -42,6 +41,7 @@ class HomeStore{
      @action
      async getCategory(params:number){
          let res:any=await getCategory(params)
+         console.log(res,"带有详细id的数据")
      }
 }
 export default HomeStore

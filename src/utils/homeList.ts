@@ -47,3 +47,6 @@ export interface topicList {
   sort_order: number
   is_show: number
 }
+export interface categoryList{
+  
+}

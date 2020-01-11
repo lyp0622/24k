@@ -1,0 +1,38 @@
+.specai-wrap{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #eeeeee;
+}
+.specialele{
+    margin-top: 10px;
+    background: #ffffff;
+}
+.specialele:nth-child(1){
+    margin-top: 0;
+}
+.specai-img{
+    width: 100%;
+    height: 200px;
+}
+.p-one{
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+}
+.p-two{
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 20px;
+    text-align: center;
+}
+.p-three{
+    font-size: 14px;
+    line-height: 36px;
+    color: red;
+    text-align: center;
+}

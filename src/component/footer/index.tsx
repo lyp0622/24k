@@ -6,7 +6,11 @@ interface ItemType{
 }
 
 export default (props:ItemType)=>{
+<<<<<<< HEAD
     return <footer className="footer_box">
+=======
+    return <footer>
+>>>>>>> lyp
               {
                    props.routes.map((item:any,index)=>{
                    return <Router.NavLink key={index} to={item.path}>
@@ -16,4 +20,9 @@ export default (props:ItemType)=>{
                    })
               }
             </footer>
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> lyp
